@@ -3,7 +3,6 @@ uvicorn
 torch
 nltk
 scikit-learn
-collections
 time
 pydantic
 sklearn
