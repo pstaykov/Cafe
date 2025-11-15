@@ -2,10 +2,5 @@ fastapi
 uvicorn
 torch
 nltk
-scikit-learn
-time
 pydantic
-sklearn
-csv
-json
 sqlite3
