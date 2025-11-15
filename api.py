@@ -40,6 +40,11 @@ app.mount("/website", StaticFiles(directory="website"), name="website")
 def serve_home():
     return FileResponse("website/index.html")
 
+# Serve admin at "/admin"
+@app.get("/supersecret")
+def serve_admin():
+    return FileResponse("website/admin.html")
+
 
 
 # ------------------------------------------------------------
