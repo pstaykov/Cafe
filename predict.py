@@ -2,6 +2,17 @@ import torch
 from model import SentimentAnalysisModel
 from nltk.tokenize import word_tokenize
 
+import nltk
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
+
+try:
+    nltk.data.find("tokenizers/punkt_tab")
+except LookupError:
+    nltk.download("punkt_tab")
+
 
 def load_model(path):
     """
