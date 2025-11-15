@@ -1,4 +1,4 @@
-const API_URL = "https://cafe-skmi.onrender.com";
+const API_URL = "";
 
 // Disable past dates
 const dateInput = document.getElementById("date");
