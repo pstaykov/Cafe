@@ -7,6 +7,11 @@ from pydantic import BaseModel
 
 from predict import load_model, predict_text
 
+#debugging
+import os
+print("DIR CONTENT:", os.listdir())
+print("WEBSITE CONTENT:", os.listdir("website") if os.path.exists("website") else "website folder missing!")
+
 
 # ------------------------------------------------------------
 # CONFIG
@@ -27,7 +32,7 @@ app.add_middleware(
 )
 
 # Serve frontend
-app.mount("/site", StaticFiles(directory="website", html=True), name="website")
+app.mount("/", StaticFiles(directory="website", html=True), name="website")
 
 
 # ------------------------------------------------------------
