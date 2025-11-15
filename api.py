@@ -3,6 +3,7 @@ import sqlite3
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from predict import load_model, predict_text
@@ -31,8 +32,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Serve frontend
-app.mount("/", StaticFiles(directory="website", html=True), name="website")
+# Serve all frontend files under /website/*
+app.mount("/website", StaticFiles(directory="website"), name="website")
+
+# Serve homepage at "/"
+@app.get("/")
+def serve_home():
+    return FileResponse("website/index.html")
+
 
 
 # ------------------------------------------------------------
