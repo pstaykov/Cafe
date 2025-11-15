@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Lumière — Admin Dashboard</title>
+
+    <!-- Reuse your main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Optional: Gatekeeping password (only if enabled) -->
+    <script src="admin_gate.js"></script>
+
+</head>
+<body>
+
+    <!-- NAVIGATION (same style as website) -->
+    <nav class="nav">
+        <div class="logo">Café Lumière — Admin</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Back to Website</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="margin-top: 120px;">
+        <h2>Admin Dashboard</h2>
+
+        <!-- RETRAIN BUTTON -->
+        <div style="text-align:center; margin-bottom: 3rem;">
+            <button class="btn" onclick="retrainModel()">Retrain Sentiment Model</button>
+        </div>
+
+        <!-- RESERVATIONS PANEL -->
+        <div class="card fade-up" style="padding: 2rem; margin-bottom: 4rem;">
+            <h3 style="margin-bottom: 1.5rem;">Reservations</h3>
+
+            <div class="table-container" style="overflow-x:auto;">
+                <table id="reservationsTable" class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Guests</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- REVIEWS PANEL -->
+        <div class="card fade-up" style="padding: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">User Reviews (Training Data)</h3>
+
+            <div class="table-container" style="overflow-x:auto;">
+                <table id="reviewsTable" class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Text</th>
+                            <th>Model Prediction</th>
+                            <th>Actual Label</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

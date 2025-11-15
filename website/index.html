@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Lumière – Where Taste Meets Light</title>
+
+    <!-- Professional Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+    <div class="logo">Café Lumière</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#origins">Our Coffee</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#analyzer">Analyzer</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/hero-video.mp4" type="video/mp4">
+        <source src="assets/hero-video.webm" type="video/webm">
+    </video>
+    <div class="hero-content fade-in">
+        <h1>Where Taste Meets Light</h1>
+        <p>Experience hand-crafted coffee and freshly baked delights, served with warmth.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section about-section fade-up">
+    <h2>About Us</h2>
+    <p>
+        At <strong>Café Lumière</strong>, we specialize in creating soulful moments.
+        From carefully sourced coffee beans to artisanal pastries, everything we serve 
+        reflects our dedication to quality, community, and comfort. Whether you're working,
+        relaxing, or meeting friends, our café is your space to shine.
+    </p>
+</section>
+
+<!-- COFFEE ORIGINS SECTION -->
+<section id="origins" class="section origins-section fade-up">
+    <h2>Our Coffee Journey</h2>
+    <p class="origins-intro">
+        Every cup tells a story. We travel the world to source exceptional beans from 
+        sustainable farms, building relationships that span generations.
+    </p>
+
+    <div class="origins-grid">
+        
+        <div class="origin-card">
+            <div class="origin-image">
+                <img src="assets/origin-ethiopia.jpg" alt="Ethiopian Coffee Farm">
+            </div>
+            <div class="origin-content">
+                <h3>Ethiopia</h3>
+                <span class="origin-location">Yirgacheffe Region</span>
+                <p>
+                    The birthplace of coffee. Our Ethiopian beans deliver bright, 
+                    floral notes with hints of bergamot and jasmine. Hand-picked 
+                    at high altitude, these heirloom varieties are processed using 
+                    traditional washed methods.
+                </p>
+                <div class="origin-notes">
+                    <span class="note">Floral</span>
+                    <span class="note">Citrus</span>
+                    <span class="note">Tea-like</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="origin-card">
+            <div class="origin-image">
+                <img src="assets/origin-colombia.jpg" alt="Colombian Coffee Farm">
+            </div>
+            <div class="origin-content">
+                <h3>Colombia</h3>
+                <span class="origin-location">Huila Department</span>
+                <p>
+                    Grown in volcanic soil at 1,800 meters, our Colombian beans 
+                    offer perfect balance. Rich caramel sweetness meets crisp 
+                    acidity, with notes of red apple and brown sugar. A crowd 
+                    favorite for espresso.
+                </p>
+                <div class="origin-notes">
+                    <span class="note">Caramel</span>
+                    <span class="note">Nutty</span>
+                    <span class="note">Smooth</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="roasting-process">
+        <h3>Our Roasting Philosophy</h3>
+        <p>
+            We roast in small batches every week to ensure peak freshness. Our roast 
+            master carefully develops each origin's unique characteristics, bringing 
+            out the flavors that make each coffee special. From light to dark, every 
+            roast is crafted with precision and passion.
+        </p>
+    </div>
+</section>
+
+<!-- MENU SECTION -->
+<section id="menu" class="section menu-section fade-up">
+    <h2>Our Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item card">
+            <img src="assets/menu1.jpg" alt="Caramel Latte">
+            <h3>Caramel Latte</h3>
+            <p>Smooth espresso with creamy steamed milk and rich caramel syrup.</p>
+            <span class="price">$4.50</span>
+        </div>
+
+        <div class="menu-item card">
+            <img src="assets/menu2.jpg" alt="Hazelnut Cappuccino">
+            <h3>Hazelnut Cappuccino</h3>
+            <p>Aromatic hazelnut paired with velvety microfoam. A customer favorite.</p>
+            <span class="price">$4.20</span>
+        </div>
+
+        <div class="menu-item card">
+            <img src="assets/menu3.jpg" alt="French Croissant">
+            <h3>French Butter Croissant</h3>
+            <p>Flaky, buttery, and baked fresh every single morning.</p>
+            <span class="price">$3.00</span>
+        </div>
+
+        <div class="menu-item card">
+            <img src="assets/menu4.jpg" alt="Blueberry Muffin">
+            <h3>Blueberry Muffin</h3>
+            <p>Moist, fluffy, and bursting with real blueberries.</p>
+            <span class="price">$2.80</span>
+        </div>
+
+        <div class="menu-item card">
+            <img src="assets/menu5.jpg" alt="Matcha Latte">
+            <h3>Matcha Latte</h3>
+            <p>Premium Japanese matcha whisked to perfection with silky steamed milk.</p>
+            <span class="price">$4.80</span>
+        </div>
+
+        <div class="menu-item card">
+            <img src="assets/menu6.jpg" alt="Chocolate Eclair">
+            <h3>Chocolate Éclair</h3>
+            <p>Classic French pastry with rich chocolate glaze and vanilla cream filling.</p>
+            <span class="price">$3.50</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- SENTIMENT ANALYZER -->
+<section id="analyzer" class="section analyzer-section fade-up">
+    <h2>Customer Feedback Analyzer</h2>
+    <p>Paste a customer review and our AI will instantly determine their sentiment.</p>
+
+    <textarea id="textInput" placeholder="Enter a customer review..."></textarea>
+    <button id="analyzeBtn" class="btn">Analyze Sentiment</button>
+
+    <div id="result" class="hidden result-box"></div>
+
+    <div id="feedback" class="hidden feedback-box">
+        <p>Was this prediction accurate?</p>
+        <button class="feedbackBtn btn" data-label="1">Positive</button>
+        <button class="feedbackBtn btn danger" data-label="0">Negative</button>
+    </div>
+</section>
+
+<!-- RESERVATIONS SECTION -->
+<section id="reservations" class="section reservations-section fade-up">
+    <h2>Reserve Your Table</h2>
+    <p class="reservation-intro">
+        Planning a special gathering? Book your table in advance and we'll make 
+        sure everything is perfect for your visit.
+    </p>
+
+    <div class="reservation-container">
+        <form id="reservationForm" class="reservation-form">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7+ Guests</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="date" id="date" name="date" required min="">
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select...</option>
+                        <option value="08:00">8:00 AM</option>
+                        <option value="08:30">8:30 AM</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="09:30">9:30 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="10:30">10:30 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="11:30">11:30 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="12:30">12:30 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="13:30">1:30 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="14:30">2:30 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="15:30">3:30 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="16:30">4:30 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="17:30">5:30 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="specialRequests">Special Requests (Optional)</label>
+                <textarea id="specialRequests" name="specialRequests" rows="4" 
+                          placeholder="Any dietary restrictions, celebrations, or special arrangements?"></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn">Confirm Reservation</button>
+
+        </form>
+
+        <div class="reservation-info">
+            <div class="info-box">
+                <h4><i data-lucide="map-pin"></i> Location</h4>
+                <p>123 Rue de Lumière<br>Paris, France</p>
+            </div>
+
+            <div class="info-box">
+                <h4><i data-lucide="clock"></i> Opening Hours</h4>
+                <p>Monday - Friday: 7:00 AM - 8:00 PM<br>
+                   Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+            </div>
+
+            <div class="info-box">
+                <h4><i data-lucide="phone"></i> Contact</h4>
+                <p>Phone: +33 1 23 45 67 89<br>
+                   Email: hello@cafelumiere.fr</p>
+            </div>
+
+            <div class="info-box">
+                <h4><i data-lucide="info"></i> Good to Know</h4>
+                <p>• Walk-ins welcome (subject to availability)<br>
+                   • Free WiFi for all guests<br>
+                   • Wheelchair accessible<br>
+                   • Pet-friendly outdoor seating</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="reservationSuccess" class="hidden success-message">
+        <div class="success-icon">✓</div>
+        <h3>Reservation Confirmed!</h3>
+        <p>We've sent a confirmation email to your address. We look forward to welcoming you!</p>
+    </div>
+</section>
+
+<!-- VISIT SECTION (NEW) -->
+<section id="visit" class="section visit-section fade-up">
+    <h2>Visit Us</h2>
+    <p>We'd love to welcome you in person. Find us at our cozy corner in the city.</p>
+
+    <div class="map-container">
+        <iframe
+            src="https://maps.google.com/maps?q=paris%20france&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Café Lumière. Made with ❤️ and freshly roasted coffee.</p>
+</footer>
+
+<script src="app.js"></script>
+
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
